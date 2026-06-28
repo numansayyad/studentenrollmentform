@@ -6,7 +6,6 @@
 <title>Student Update Form</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -14,43 +13,43 @@
     font-family:'Times New Roman', Times, serif;
 }
 
-/* Body */
-
 body{
-    background:linear-gradient(135deg,#74ebd5,#9face6);
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
     padding-top:100px;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 
 nav{
     width:100%;
-    height:70px;
-    background:#1e293b;
+    height:75px;
+    background:#111827;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 60px;
+    padding:0 70px;
     position:fixed;
     top:0;
     left:0;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    z-index:1000;
 }
 
 .logo{
-    color:white;
-    font-size:30px;
+    color:#fff;
+    font-size:32px;
     font-weight:bold;
-    letter-spacing:1px;
+    letter-spacing:2px;
 }
 
 nav ul{
-    list-style:none;
     display:flex;
+    list-style:none;
 }
 
 nav ul li{
-    margin-left:30px;
+    margin-left:25px;
 }
 
 nav ul li a{
@@ -59,45 +58,49 @@ nav ul li a{
     font-size:18px;
     font-weight:bold;
     padding:10px 18px;
-    border-radius:6px;
+    border-radius:25px;
     transition:.3s;
 }
 
 nav ul li a:hover{
-    background:#4CAF50;
+    background:#8b5cf6;
+    color:white;
 }
 
-/* Form Container */
+/* ================= FORM ================= */
 
 .container{
-    width:500px;
-    margin:30px auto;
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    width:540px;
+    margin:20px auto;
+    padding:35px;
+    border-radius:20px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.3);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 h2{
     text-align:center;
-    color:#1e293b;
-    margin-bottom:20px;
+    color:white;
+    margin-bottom:25px;
+    font-size:34px;
 }
 
 .success{
-    color:green;
     text-align:center;
-    margin-bottom:20px;
+    color:#d1fae5;
     font-size:20px;
+    margin-bottom:20px;
     font-weight:bold;
 }
 
 label{
     display:block;
+    color:white;
     font-size:18px;
     font-weight:bold;
-    margin-bottom:6px;
-    color:#333;
+    margin-bottom:8px;
 }
 
 input[type=text],
@@ -105,38 +108,64 @@ input[type=email],
 select,
 textarea{
     width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    margin-bottom:15px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:18px;
     font-size:16px;
+    outline:none;
+    background:rgba(255,255,255,.9);
+    transition:.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    transform:scale(1.02);
+    box-shadow:0 0 10px rgba(255,255,255,.6);
 }
 
 textarea{
-    height:80px;
+    height:90px;
     resize:none;
 }
 
 .radio-group,
 .checkbox-group{
+    color:white;
     margin-bottom:18px;
+    font-size:17px;
 }
+
+.radio-group input,
+.checkbox-group input{
+    margin-right:5px;
+}
+
+/* ================= BUTTON ================= */
 
 button{
     width:100%;
-    padding:12px;
-    background:#4CAF50;
-    color:white;
+    padding:14px;
     border:none;
-    border-radius:6px;
-    font-size:18px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#ff6a00,#ee0979);
+    color:white;
+    font-size:19px;
+    font-weight:bold;
     cursor:pointer;
     transition:.3s;
 }
 
 button:hover{
-    background:#2e7d32;
+    transform:translateY(-3px);
+    box-shadow:0 12px 20px rgba(238,9,121,.4);
 }
+
+button:active{
+    transform:scale(.98);
+}
+
 
 </style>
 

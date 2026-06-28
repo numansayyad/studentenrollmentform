@@ -15,25 +15,28 @@
 }
 
 body{
-    background:linear-gradient(135deg,#74ebd5,#9face6);
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 
 nav{
     width:100%;
-    height:70px;
-    background:#1e293b;
+    height:75px;
+    background:#0f172a;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 60px;
+    padding:0 70px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .logo{
     color:white;
-    font-size:30px;
+    font-size:32px;
     font-weight:bold;
+    letter-spacing:2px;
 }
 
 nav ul{
@@ -49,81 +52,91 @@ nav ul li a{
     text-decoration:none;
     color:white;
     font-size:18px;
+    font-weight:bold;
     padding:10px 18px;
-    border-radius:6px;
+    border-radius:30px;
     transition:.3s;
 }
 
 nav ul li a:hover{
-    background:#4CAF50;
+    background:#38bdf8;
+    color:#0f172a;
 }
 
-/* About Section */
+/* ================= ABOUT SECTION ================= */
 
 .container{
-    width:70%;
+    width:75%;
     margin:60px auto;
     background:white;
     padding:40px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 .container h1{
     text-align:center;
-    color:#1e293b;
-    margin-bottom:20px;
-    font-size:40px;
+    color:#0f172a;
+    font-size:42px;
+    margin-bottom:25px;
 }
 
 .container p{
+    color:#555;
     font-size:20px;
-    line-height:1.8;
-    color:#444;
+    line-height:1.9;
     text-align:justify;
 }
 
-/* Features */
+/* ================= FEATURE CARDS ================= */
 
 .features{
     display:flex;
-    justify-content:space-between;
-    margin-top:40px;
-    gap:20px;
+    justify-content:center;
+    gap:30px;
+    margin-top:45px;
+    flex-wrap:wrap;
 }
 
 .card{
     flex:1;
-    background:#f4f6f9;
-    padding:20px;
-    border-radius:10px;
+    min-width:250px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
     text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
     transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    background:#e3f2fd;
+    transform:translateY(-10px);
+    background:#eff6ff;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 .card h2{
-    color:#1e293b;
-    margin-bottom:10px;
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:24px;
 }
 
 .card p{
-    font-size:18px;
+    color:#555;
+    font-size:17px;
+    line-height:1.7;
     text-align:center;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 
 footer{
-    margin-top:40px;
-    background:#1e293b;
+    margin-top:50px;
+    background:#0f172a;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px;
+    font-size:18px;
 }
 
 </style>

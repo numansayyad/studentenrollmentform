@@ -9,7 +9,6 @@
 <title>Student List</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -18,26 +17,28 @@
 }
 
 body{
-    background:linear-gradient(135deg,#74ebd5,#9face6);
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
 }
 
 /* ================= NAVBAR ================= */
 
 nav{
     width:100%;
-    height:70px;
-    background:#1e293b;
+    height:75px;
+    background:#0f172a;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 60px;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    padding:0 70px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .logo{
     color:white;
-    font-size:30px;
+    font-size:32px;
     font-weight:bold;
+    letter-spacing:2px;
 }
 
 nav ul{
@@ -53,13 +54,15 @@ nav ul li a{
     text-decoration:none;
     color:white;
     font-size:18px;
+    font-weight:bold;
     padding:10px 18px;
-    border-radius:6px;
-    transition:.3s;
+    border-radius:30px;
+    transition:0.3s;
 }
 
 nav ul li a:hover{
-    background:#4CAF50;
+    background:#38bdf8;
+    color:#0f172a;
 }
 
 /* ================= CONTAINER ================= */
@@ -68,78 +71,90 @@ nav ul li a:hover{
     width:95%;
     margin:40px auto;
     background:white;
-    border-radius:12px;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 .container h2{
     text-align:center;
-    color:#1e293b;
-    margin-bottom:25px;
+    color:#0f172a;
     font-size:34px;
+    margin-bottom:25px;
 }
+
+/* ================= TABLE ================= */
 
 table{
     width:100%;
     border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
 }
 
 th{
-    background:#1e293b;
+    background:#2563eb;
     color:white;
-    padding:14px;
+    padding:15px;
     font-size:18px;
 }
 
 td{
-    padding:12px;
+    padding:14px;
     text-align:center;
-    border-bottom:1px solid #ddd;
+    border-bottom:1px solid #e2e8f0;
 }
 
 tr:nth-child(even){
-    background:#f8f9fa;
+    background:#f8fafc;
 }
 
 tr:hover{
-    background:#dff6ff;
-    transition:.3s;
+    background:#dbeafe;
+    transition:0.3s;
 }
 
-.no-data{
-    text-align:center;
-    color:red;
-    font-size:22px;
-    margin-top:20px;
-}
-
-/* Buttons */
+/* ================= BUTTONS ================= */
 
 .update-btn{
     text-decoration:none;
-    background:#28a745;
+    background:#22c55e;
     color:white;
-    padding:6px 12px;
-    border-radius:5px;
+    padding:8px 15px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.update-btn:hover{
+    background:#16a34a;
+    box-shadow:0 5px 10px rgba(34,197,94,.3);
 }
 
 .delete-btn{
     text-decoration:none;
-    background:#dc3545;
+    background:#ef4444;
     color:white;
-    padding:6px 12px;
-    border-radius:5px;
+    padding:8px 15px;
+    border-radius:8px;
+    font-weight:bold;
     margin-left:8px;
-}
-
-.update-btn:hover{
-    background:#218838;
+    transition:0.3s;
 }
 
 .delete-btn:hover{
-    background:#c82333;
+    background:#dc2626;
+    box-shadow:0 5px 10px rgba(239,68,68,.3);
 }
+
+.no-data{
+    text-align:center;
+    color:#dc2626;
+    font-size:24px;
+    font-weight:bold;
+    margin-top:30px;
+}
+
 
 </style>
 

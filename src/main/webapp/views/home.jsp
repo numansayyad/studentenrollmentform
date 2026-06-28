@@ -15,24 +15,28 @@
 }
 
 body{
-    background:#f4f6f9;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 
 nav{
-    background:#1e293b;
-    height:70px;
+    width:100%;
+    height:75px;
+    background:#0f172a;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 60px;
+    padding:0 70px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .logo{
     color:white;
     font-size:32px;
     font-weight:bold;
+    letter-spacing:2px;
 }
 
 nav ul{
@@ -45,99 +49,110 @@ nav ul li{
 }
 
 nav ul li a{
-    color:white;
     text-decoration:none;
+    color:white;
     font-size:18px;
+    font-weight:bold;
     padding:10px 18px;
-    border-radius:5px;
+    border-radius:30px;
     transition:.3s;
 }
 
 nav ul li a:hover{
-    background:#4CAF50;
+    background:#38bdf8;
+    color:#0f172a;
 }
 
-/* Hero */
+/* ================= HERO SECTION ================= */
 
 .hero{
-    height:500px;
-    background:linear-gradient(135deg,#74ebd5,#9face6);
+    height:520px;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
     text-align:center;
+    color:white;
 }
 
 .hero h1{
-    font-size:55px;
-    color:#1e293b;
+    font-size:60px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.2);
 }
 
 .hero p{
-    margin-top:20px;
-    font-size:22px;
-    color:#333;
     width:70%;
+    font-size:22px;
+    line-height:1.8;
+    color:#f8fafc;
 }
 
 .hero a{
     margin-top:35px;
     text-decoration:none;
-    background:#1e293b;
+    background:#0f172a;
     color:white;
     padding:15px 35px;
-    border-radius:8px;
+    border-radius:30px;
     font-size:20px;
+    font-weight:bold;
     transition:.3s;
 }
 
 .hero a:hover{
-    background:#4CAF50;
+    background:white;
+    color:#2563eb;
+    transform:translateY(-3px);
 }
 
-/* Features */
+/* ================= FEATURES ================= */
 
 .features{
+    width:90%;
+    margin:60px auto;
     display:flex;
     justify-content:center;
     gap:30px;
-    margin:60px;
     flex-wrap:wrap;
 }
 
 .card{
-    width:300px;
+    width:320px;
     background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    padding:30px;
+    border-radius:18px;
     text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
     transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
 }
 
 .card h2{
-    color:#1e293b;
+    color:#0f172a;
     margin-bottom:15px;
 }
 
 .card p{
     color:#555;
-    line-height:1.6;
+    font-size:17px;
+    line-height:1.8;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 
 footer{
-    background:#1e293b;
+    background:#0f172a;
     color:white;
     text-align:center;
-    padding:20px;
-    margin-top:50px;
+    padding:25px;
+    margin-top:40px;
+    font-size:18px;
 }
 
 </style>
